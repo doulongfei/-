@@ -1,6 +1,7 @@
 package main
 import(
 	"fmt"
+	_"strconv"//_:下划线起到忽略的作用。
 )
 func main(){
 	var age int =18
@@ -22,7 +23,7 @@ func main(){
 	// 基本数据类型（值类型），都有对应的指针类型，形式为*数据类型
 	//int =》 *int  。。。。。。
 
-	
+	 
 
 
 }
