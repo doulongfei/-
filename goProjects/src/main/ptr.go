@@ -20,7 +20,7 @@ func main(){
 	//指针变量的地址不可以不匹配 var num int =10和var ptr1 *int =&num必须都为int 要匹配
 
 	// 基本数据类型（值类型），都有对应的指针类型，形式为*数据类型
-	//int =》 *int  。。。
+	//int =》 *int  。。。。。。
 
 	
 
