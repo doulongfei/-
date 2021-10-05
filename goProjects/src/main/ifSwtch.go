@@ -34,4 +34,13 @@ func main() {
 		sum+=i
 	}
 	fmt.Println(sum)
+
+	//死循环的两种写法
+	for;true;{//true的位置可以写自己定制的条件
+		fmt.Println("111")
+	}
+	for{
+		fmt.Println("222")
+	}
+
 }
