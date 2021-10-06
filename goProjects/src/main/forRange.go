@@ -20,4 +20,15 @@ func main() {
 			}
 		}
 	}
+	fmt.Println("hello golang 你好1")
+	fmt.Println("hello golang 你好2")
+	fmt.Println("hello golang 你好3")
+	goto helloLabel
+	fmt.Println("hello golang 你好4")
+	fmt.Println("hello golang 你好5")
+	fmt.Println("hello golang 你好6")
+	helloLabel:
+	fmt.Println("hello golang 你好7")
+	fmt.Println("hello golang 你好8")
+	fmt.Println("hello golang 你好9")
 }
