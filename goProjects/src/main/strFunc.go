@@ -41,6 +41,8 @@ func main() {
 	// 区分大小写的字符串比较
 
 	fmt.Println("hello"=="HELLo")
-	
+	//返回字串在字符串第一次出现的索引值，如果没有返回-1
+	index:=strings.Index("javaAndgolang","l")
 
+	fmt.Println(index)
 }
