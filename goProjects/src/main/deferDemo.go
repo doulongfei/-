@@ -36,10 +36,5 @@ func add1(num1 int ,num2 int ) int {
 	fmt.Println("sum=",sum)
 	return sum
 
-	/*
-	sum= 50
-	num2 30
-	num1 20
-	50
-	*/
 }
+//defer应用场景：关闭使用的某个资源
