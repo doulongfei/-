@@ -1,6 +1,18 @@
 package main
 import "fmt"
 
+
+func test7() int {
+	fmt.Println("test函数执行")
+	return 19
+	
+}
+func init()  {
+	fmt.Println("init函数被调用")
+}
+
+var num9 int=test7()
+
 func sum(num1 int,num2 int) int { //如果没有返回值，则参数后面的返回值类型不写，即可。类似于void方法
 	return num1+num2
 }
@@ -9,6 +21,7 @@ func sum1(num1 int,num2 int) (int ,int) { //如果没有返回值，则参数后
 	return num1+num2,num1*num2
 }
 func main() {
+	fmt.Println("main函数被调用")
 	var str string="hello golang 你好"
 	for i := 0; i < len(str); i++ {
 		fmt.Printf("%c \n",str[i])
@@ -67,6 +80,13 @@ func main() {
 
 	test3(1,3.14,test1)
 
+
+	//匿名函数
+	result:=func (num1 int,num2 int) int {
+		return num1+num2
+	}(10,20)
+	fmt.Println("匿名函数调用测试",result)
+
 }
 func test(num *int)  {
 	*num=30
@@ -100,7 +120,7 @@ func test5(num1 int,num2 int) (int ,int) {
 }
 //给返回值命名
 func test56(num1 int,num2 int) (sum int ,sub int) {
-	sum:=num1+num2
-	sub:=num1-num2
+	sum=num1+num2
+	sub=num1-num2
 	return
 }
